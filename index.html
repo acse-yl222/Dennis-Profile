@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple website</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body class="light-theme">
-    <h1>Task List</h1>
-    <p id="msg">Current tasks:</p>
-    <ul>
-      <li class="list">Add visual styles</li>
-      <li class="list">Add light and dark themes</li>
-      <li>Enable switching the theme</li>
-    </ul>
-    <div>
-      <button class="btn">Dark</button>
-    </div>
-    <script src="app.js"></script>
-  </body>
+    <title>Your Name - Academic Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Yueyan Li</h1>
+            <p>Imperial College London | PhD in AI4Computational Physics | Janet Watson PhD Fellow Scholarship</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2>About</h2>
+                <p>Write a brief introduction about yourself, your background, and your academic interests.</p>
+            </section>
+            <section id="research">
+                <h2>Research</h2>
+                <img src="research-photo.jpg" alt="Research" class="section-photo">
+                <p>Detail your research interests, projects, and any collaborations.</p>
+            </section>
+            <section id="publications">
+                <h2>Publications</h2>
+                <div class="publication">
+                    <h3>Publication Title 1</h3>
+                    <img src="publication-image1.jpg" alt="Publication 1" class="publication-image">
+                    <video src="publication-video1.gif" autoplay loop muted class="publication-video"></video>
+                    <p>Short description of the publication and its significance.</p>
+                </div>
+                <div class="publication">
+                    <h3>Publication Title 2</h3>
+                    <img src="publication-image2.jpg" alt="Publication 2" class="publication-image">
+                    <video src="publication-video2.gif" autoplay loop muted class="publication-video"></video>
+                    <p>Short description of the publication and its significance.</p>
+                </div>
+                <!-- Add more publications as needed -->
+            </section>
+            <section id="teaching">
+                <h2>Teaching</h2>
+                <img src="teaching-photo.jpg" alt="Teaching" class="section-photo">
+                <p>Describe your teaching philosophy, courses you teach, and any related activities.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
